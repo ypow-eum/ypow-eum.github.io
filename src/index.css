@@ -1,13 +1,50 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.scanningLineMove {
+  background-image: linear-gradient(to bottom, rgba(170, 184, 190, 0), orange);
+}
+
+.scanningLineMoveUPC {
+  background-image: linear-gradient(to bottom, rgba(170, 184, 190, 0), green);
+}
+
+.scanningLineMoveOCR {
+  background-image: linear-gradient(to bottom, rgba(170, 184, 190, 0), blue);
+}
+
+.scanningLineFastOCR {
+  animation: scanning 2.2s linear infinite;
+}
+.scanningLineFast100 {
+  animation: scanning 1.5s linear infinite;
+}
+.scanningLineFast125 {
+  animation: scanning 1.25s linear infinite;
+}
+.scanningLineFast150 {
+  animation: scanning 1s linear infinite;
+}
+.scanningLineFast175 {
+  animation: scanning 0.75s linear infinite;
+}
+.scanningLineFast200 {
+  animation: scanning 0.5s linear infinite;
+}
+.scanningLineFast250 {
+  animation: scanning 0.25s linear infinite;
+}
+
+@keyframes scanning {
+  100% {
+    transform: translate(0, 155px);
+  }
 }
